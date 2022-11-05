@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\usepackage{CJK}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+
+\floatname{algorithm}{Algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{document}
+\begin{CJK*}{UTF8}{gkai}
+    
+    \begin{algorithm}
+        \caption{example}
+        \begin{algorithmic}[1]
+            
+            \Require text
+            \Ensure text
+            
+            \If {condition}  
+            \State text
+            \EndIf
+            \State
+
+            \If  {condition}     
+            \State text   
+            \ElsIf {condition}   
+            \State text       
+            \Else   
+            \State text  
+            \EndIf
+            \State
+            
+            \For{condition}   
+            \State text
+            \EndFor
+            \State
+                
+            \ForAll {condition}
+            \State text
+            \EndFor
+            \State
+                
+            \While {condition}  
+            \State text 
+            \EndWhile
+            \State
+                
+            \Repeat 
+            \State text
+            \Until {condition}
+            \State
+                
+            \Loop 
+            \State text
+            \EndLoop
+            \State
+            
+            \State \Return{text}
+        \end{algorithmic}
+    \end{algorithm}
+
+    \end{CJK*}
+\end{document}
